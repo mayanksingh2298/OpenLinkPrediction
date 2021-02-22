@@ -1,0 +1,12 @@
+"""
+This module contains various classes for performing
+tokenization.
+"""
+
+from allennlp_data.tokenizers.tokenizer import Token, Tokenizer
+from allennlp_data.tokenizers.spacy_tokenizer import SpacyTokenizer
+from allennlp_data.tokenizers.letters_digits_tokenizer import LettersDigitsTokenizer
+from allennlp_data.tokenizers.pretrained_transformer_tokenizer import PretrainedTransformerTokenizer
+from allennlp_data.tokenizers.character_tokenizer import CharacterTokenizer
+from allennlp_data.tokenizers.sentence_splitter import SentenceSplitter
+from allennlp_data.tokenizers.whitespace_tokenizer import WhitespaceTokenizer

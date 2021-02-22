@@ -1,0 +1,50 @@
+wn18: 
+RotatE Baseline Validation Set:
+HITS1: (94.37, 94.46, 94.28)
+RotatE Baseline Test Set:
+HITS1: (94.27, 94.27, 94.3)
+mcq_both_1/epoch=00_loss=0.157_eval_acc=0.939.ckpt
+HITS1: 94.19, MRR: 94.88
+
+wn18rr:
+RotatE Replicated Validation:
+HITS1: (42.81, 44.52, 41.10, 25.60)
+RotatE Replicated Test:
+HITS1: (42.29, 43.84, 40.74, 25.67)
+mcq_both_1/epoch=15_loss=0.198_eval_acc=0.446.ckpt
+HITS1:  43.85, MRR: 48.43 (Neg samples: 5)
+
+FB15k-237:
+RotatE Replicated Validation:
+HITS1: (24.72, ,34.18, 15.26)
+RotatE Replicated Test:
+HITS1: (23.72, 32.71, 14.74, 11.94)
+HITS10: (53.13)
+mcq_both_1/epoch=07_loss=0.210_eval_acc=0.315.ckpt
+HITS1: 30.49, MRR: 37.93
+
+FB15k
+RotatE Replicated Validation:
+HITS1: (73.57, 76.85, 70.30)
+RotatE Replicated Test:
+HITS1: (73.35, 76.36, 70.34, 22.70)
+HITS10: (87.9)
+mcq_both_1/epoch=04_loss=0.226_eval_acc=0.745.ckpt
+HITS1: 74.43 MRR: 79.32
+
+17.6, 18.8, 18.8, 17.6, 16.8, 16.4
+
+# 500 instances of FB15k, epochs 10
+
+stage1 HITS@1 - 72.8
+
+mcq - 10 negative samples: 67.8, 75.8
+mcq - 20 negative samples: 65.0
+mcq - 30 negative samples: 58.6, 75.6
+mcq - 40 negative samples: 59
+mcq - 50 negative samples: 59.6, 75.8
+
+FB15k-237:
+3 GPU - 29.3 (end of 7 epochs)
+1 GPU - 30.3 (end of 2 epochs)
+3 GPU lr 5e-6 - 
